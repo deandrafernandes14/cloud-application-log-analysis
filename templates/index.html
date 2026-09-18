@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cloud Application Observability Console</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <div class="brand">
+        <div class="logo">C</div>
+
+        <div>
+            <h2>CloudOps</h2>
+            <span>Observability Console</span>
+        </div>
+    </div>
+
+    <div class="operational">
+        <span class="status-dot"></span>
+        SYSTEM OPERATIONAL
+    </div>
+</nav>
+
+
+<main>
+
+    <section class="hero">
+        <div class="badge">GOOGLE CLOUD OBSERVABILITY</div>
+
+        <h1>Cloud Application<br>
+            <span>Log Analysis System</span>
+        </h1>
+
+        <p>
+            Monitor application health, generate operational events,
+            and analyze cloud logs through an end-to-end
+            Google Cloud observability pipeline.
+        </p>
+    </section>
+
+
+    <section class="system-grid">
+
+        <div class="info-card">
+            <p>SERVICE STATUS</p>
+            <h3>
+                <span class="green-dot"></span>
+                Healthy
+            </h3>
+        </div>
+
+        <div class="info-card">
+            <p>DEPLOYMENT</p>
+            <h3>Cloud Run</h3>
+        </div>
+
+        <div class="info-card">
+            <p>REGION</p>
+            <h3>asia-south1</h3>
+        </div>
+
+        <div class="info-card">
+            <p>LOG PIPELINE</p>
+            <h3>Active</h3>
+        </div>
+
+    </section>
+
+
+    <section class="events">
+
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">EVENT SIMULATION</span>
+                <h2>Generate Application Events</h2>
+            </div>
+
+            <p>
+                Trigger controlled events to test the
+                monitoring and analytics pipeline.
+            </p>
+        </div>
+
+
+        <div class="event-grid">
+
+            <a href="/health" class="event-card healthy">
+                <div class="icon">✓</div>
+
+                <div>
+                    <span>HTTP 200</span>
+                    <h3>Health Check</h3>
+                    <p>Generate a successful service health event.</p>
+                </div>
+
+                <div class="arrow">→</div>
+            </a>
+
+
+            <a href="/simulate-failed-request" class="event-card warning">
+                <div class="icon">!</div>
+
+                <div>
+                    <span>HTTP 404</span>
+                    <h3>Failed Request</h3>
+                    <p>Simulate a resource-not-found request.</p>
+                </div>
+
+                <div class="arrow">→</div>
+            </a>
+
+
+            <a href="/simulate-error" class="event-card danger">
+                <div class="icon">×</div>
+
+                <div>
+                    <span>HTTP 500</span>
+                    <h3>Application Error</h3>
+                    <p>Generate a simulated application failure.</p>
+                </div>
+
+                <div class="arrow">→</div>
+            </a>
+
+
+            <a href="/simulate-slow-request" class="event-card abnormal">
+                <div class="icon">◷</div>
+
+                <div>
+                    <span>LATENCY EVENT</span>
+                    <h3>Slow Request</h3>
+                    <p>Simulate abnormal application response time.</p>
+                </div>
+
+                <div class="arrow">→</div>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="pipeline">
+
+        <span class="eyebrow">DATA PIPELINE</span>
+        <h2>How application events are analyzed</h2>
+
+        <div class="pipeline-flow">
+
+            <div class="pipeline-node">
+                <strong>01</strong>
+                <span>Cloud Run</span>
+                <small>Application</small>
+            </div>
+
+            <div class="connector">→</div>
+
+            <div class="pipeline-node">
+                <strong>02</strong>
+                <span>Cloud Logging</span>
+                <small>Collection</small>
+            </div>
+
+            <div class="connector">→</div>
+
+            <div class="pipeline-node">
+                <strong>03</strong>
+                <span>BigQuery</span>
+                <small>Analysis</small>
+            </div>
+
+            <div class="connector">→</div>
+
+            <div class="pipeline-node">
+                <strong>04</strong>
+                <span>Looker Studio</span>
+                <small>Visualization</small>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <span>Cloud Application Log Analysis System</span>
+    <span>Built on Google Cloud Platform</span>
+</footer>
+
+</body>
+</html>
