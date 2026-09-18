@@ -2,6 +2,12 @@
 
 A cloud-native application monitoring and log analytics system built on Google Cloud Platform. The system collects application logs, identifies errors, failed requests and abnormal activity, and generates an application health dashboard.
 
+## Application Health Dashboard
+<img width="727" height="338" alt="image" src="https://github.com/user-attachments/assets/5f0a092e-9806-4d7d-becd-d724e16c0e41" />
+<img width="719" height="369" alt="image" src="https://github.com/user-attachments/assets/b0b3552e-b8b7-40b6-9f2c-44d6ae27910d" />
+
+
+
 ## Architecture
 
 Cloud Run → Cloud Logging → Log Router → BigQuery → Looker Studio
